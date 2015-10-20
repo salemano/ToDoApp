@@ -43,11 +43,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Interfaces\ToDo.Interfaces.csproj">
+    <ProjectReference Include="..\ToDo.Interfaces\ToDo.Interfaces.csproj">
       <Project>{679B046E-6FC1-482F-9FFF-50AAD3121E44}</Project>
       <Name>ToDo.Interfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Model\ToDo.Models.csproj">
+    <ProjectReference Include="..\ToDo.Models\ToDo.Models.csproj">
       <Project>{9554A068-C0B9-4890-9AAF-2B55E9042128}</Project>
       <Name>ToDo.Models</Name>
     </ProjectReference>
