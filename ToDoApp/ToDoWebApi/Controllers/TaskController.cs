@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Web.Http;
-using Core;
-using Interfaces;
-using Model;
-using ToDoDAL;
+using ToDo.Core;
+using ToDo.DAL;
+using ToDo.Interfaces;
+using ToDo.Models;
 
-namespace ToDoWebApi.Controllers
+namespace ToDo.WebAPI.Controllers
 {
     // Read requirements
 

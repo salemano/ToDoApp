@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Interfaces;
-using Model;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using ToDo.Interfaces;
+using ToDo.Models;
 
-namespace ToDoDAL
+namespace ToDo.DAL
 {
     public class MongoTaskDataAccess : ITasksDataAccess
     {

@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Interfaces;
-using Model;
+using ToDo.Interfaces;
+using ToDo.Models;
 
-namespace Core
+namespace ToDo.Core
 {
     public class TaskService : ITaskService
     {

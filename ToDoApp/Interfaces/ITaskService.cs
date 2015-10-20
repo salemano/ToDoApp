@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Model;
+using ToDo.Models;
 
-namespace Interfaces
+namespace ToDo.Interfaces
 {
     public interface ITaskService
     {

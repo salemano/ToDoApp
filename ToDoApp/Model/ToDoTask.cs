@@ -1,4 +1,4 @@
-﻿namespace Model
+﻿namespace ToDo.Models
 {
     public class ToDoTask
     {

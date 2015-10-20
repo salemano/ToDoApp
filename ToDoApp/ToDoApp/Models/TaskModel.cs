@@ -1,4 +1,4 @@
-﻿namespace ToDoApp.Models
+﻿namespace ToDo.Web.Models
 {
     public class TaskModel
     {

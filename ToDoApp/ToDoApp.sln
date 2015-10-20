@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoApp", "ToDoApp\ToDoApp.csproj", "{95E98BB3-6A1F-4D2A-B433-BDCFFEA06610}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Web", "ToDoApp\ToDo.Web.csproj", "{95E98BB3-6A1F-4D2A-B433-BDCFFEA06610}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoWebApi", "ToDoWebApi\ToDoWebApi.csproj", "{A9696B3F-B210-4C80-8E2D-B1CCF34F99B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.WebAPI", "ToDoWebApi\ToDo.WebAPI.csproj", "{A9696B3F-B210-4C80-8E2D-B1CCF34F99B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoDAL", "ToDoDAL\ToDoDAL.csproj", "{155CBEED-3741-4A47-8ABE-3EAB6EBB07BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.DAL", "ToDoDAL\ToDo.DAL.csproj", "{155CBEED-3741-4A47-8ABE-3EAB6EBB07BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{5CD435A2-86B8-4394-BBF3-240BD05FD49F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Core", "Core\ToDo.Core.csproj", "{5CD435A2-86B8-4394-BBF3-240BD05FD49F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{679B046E-6FC1-482F-9FFF-50AAD3121E44}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Interfaces", "Interfaces\ToDo.Interfaces.csproj", "{679B046E-6FC1-482F-9FFF-50AAD3121E44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{9554A068-C0B9-4890-9AAF-2B55E9042128}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Models", "Model\ToDo.Models.csproj", "{9554A068-C0B9-4890-9AAF-2B55E9042128}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
-using ToDoApp.Models;
+using ToDo.Web.Models;
 
-namespace ToDoApp.Controllers
+namespace ToDo.Web.Controllers
 {
     public class HomeController : Controller
     {
