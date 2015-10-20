@@ -1,0 +1,24 @@
+﻿@model ToDoApp.Models.TaskModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Welcome to MVC 5</h2>
+
+@using (Html.BeginForm("AddTask", "Home"))
+{
+    @Html.LabelFor(model => Model.Task)
+    @Html.TextBoxFor(model => Model.Task)
+    <input type="submit" value="Submit"/>
+}
+
+
+<table>
+    @foreach (var item in Model.Tasks)
+    {
+        <tr>
+            <th>@item</th><td>@Html.ActionLink("Remove", "RemoveTask", new { task = item })</td>
+        </tr>
+    }
+</table>
