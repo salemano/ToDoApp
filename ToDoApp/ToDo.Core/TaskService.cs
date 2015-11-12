@@ -22,7 +22,7 @@ namespace ToDo.Core
 
         public void Insert(ToDoTask task)
         {
-            this.dataAccess.InsertTaskAsync(task);
+            this.dataAccess.InsertTask(task);
         }
 
         public Task<List<ToDoTask>> GetAll()
@@ -32,7 +32,7 @@ namespace ToDo.Core
 
         public void Remove(string value)
         {
-            this.dataAccess.RemoveTaskAsync(value);
+           this.dataAccess.RemoveTask(value);
         }
 
         public void Update(ToDoTask task)

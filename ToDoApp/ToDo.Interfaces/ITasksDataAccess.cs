@@ -10,10 +10,10 @@ namespace ToDo.Interfaces
 
         Task<List<ToDoTask>> GetAllTasksAsync();
 
-        void RemoveTaskAsync(string task);
+        string RemoveTask(string task);
 
         void UpdateTaskAsync(ToDoTask task, string newValue = "");
 
-        void InsertTaskAsync(ToDoTask task);
+        string InsertTask(ToDoTask task);
     }
 }

@@ -22,9 +22,9 @@ namespace ToDo.WebAPI.Controllers
         }
 
         [HttpPost]
-        public string AddTask(string task)
+        public string AddTask(string value)
         {
-            var taskValue = new ToDoTask {Value = task};
+            var taskValue = new ToDoTask {Value = value};
             this.taskService.Insert(taskValue);
             return "Ok";
         }

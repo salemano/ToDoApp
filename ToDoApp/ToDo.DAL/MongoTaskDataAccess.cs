@@ -11,7 +11,7 @@ namespace ToDo.DAL
     public class MongoTaskDataAccess : ITasksDataAccess
     {
         private MongoClient client;
-        private const string CollectionName = "Tasks";
+        private const string CollectionName = "MyTasks";
         private const string DatabaseName = "ToDoApp";
         private const string FieldId = "Id";
         private const string FieldValue = "Value";
@@ -25,7 +25,7 @@ namespace ToDo.DAL
         {
             var tasks = this.GetTasks();
 
-            var filter = Builders<BsonDocument>.Filter.Eq(FieldId, task);
+            var filter = Builders<BsonDocument>.Filter.Eq(FieldValue, task);
             var result = await tasks.Find(filter).FirstAsync();
 
             return new ToDoTask {Value = result[FieldValue].AsString };
@@ -42,11 +42,11 @@ namespace ToDo.DAL
                 }).ToList();
         }
 
-        public async void RemoveTaskAsync(string task)
+        public string RemoveTask(string task)
         {
-            var filter = Builders<BsonDocument>.Filter.Eq(FieldId, task);
+            var filter = Builders<BsonDocument>.Filter.Eq(FieldValue, task);
             var tasks = this.GetTasks();
-            await tasks.DeleteOneAsync(filter);
+            return tasks.DeleteOneAsync(filter).Result.ToJson();
         }
 
         public async void UpdateTaskAsync(ToDoTask task, string newValue="")
@@ -57,7 +57,7 @@ namespace ToDo.DAL
             await tasks.UpdateOneAsync(filter, update);
         }
 
-        public async void InsertTaskAsync(ToDoTask task)
+        public string InsertTask(ToDoTask task)
         {
             var tasks = this.GetTasks();
             var document = new BsonDocument
@@ -65,7 +65,7 @@ namespace ToDo.DAL
                 { FieldValue, task.Value }
             };
 
-            await tasks.InsertOneAsync(document);
+            return tasks.InsertOneAsync(document).ToJson();
         }
 
         private IMongoCollection<BsonDocument> GetTasks()
